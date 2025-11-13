@@ -3,6 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import customer1 from "@/assets/customer-1.jpg";
 import customer2 from "@/assets/customer-2.jpg";
 import customer3 from "@/assets/customer-3.jpg";
+import customer4 from "@/assets/customer-4.jpg";
+import customer5 from "@/assets/customer-5.jpg";
+import customer6 from "@/assets/customer-6.jpg";
 
 const testimonials = [
   {
@@ -19,6 +22,21 @@ const testimonials = [
     name: "Emma Rodriguez",
     image: customer3,
     text: "The support team is amazing! They walked me through every step and made sure I understood everything.",
+  },
+  {
+    name: "David Kim",
+    image: customer4,
+    text: "Incredibly fast response time! Got my issue resolved in under 90 seconds. These guys are the absolute best in the business.",
+  },
+  {
+    name: "Lisa Martinez",
+    image: customer5,
+    text: "I've tried many crypto wallets, and Trust Wallet has by far the fastest and most helpful support team. They're truly one of the best!",
+  },
+  {
+    name: "James Anderson",
+    image: customer6,
+    text: "Lightning-fast help! The team responded immediately and solved my problem in minutes. Hands down the best support in crypto.",
   },
 ];
 
@@ -38,7 +56,7 @@ const Testimonials = () => {
           </div>
           <p className="text-muted-foreground">Based on over 100,000 customer reviews</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
